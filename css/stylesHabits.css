@@ -4,13 +4,6 @@ body{
     font-family: "Rubik Marker Hatch", system-ui;
     background-color: #E34234;
 }
-#titulo1{
-    text-align: center;
-    border: solid;
-    border-radius: 10px;
-    background-color: #F2F1E8;
-    color: #050533;
-}
 
 header{
     background-color: #F2F1E8;
@@ -57,28 +50,27 @@ header{
         text-align: center;
     }
 }
-#texto{
-    border: solid;
-    text-align: center;
-    margin: 10px;
-    border-radius: 20px;
-    transition: all 1000ms ease;
-}
 
-#texto:hover{
+/* Estilos generales para la sección de hábitos */
+#habits {
+    padding: 20px;
     background-color: #F2F1E8;
-    color: #E34234;
-    border-color: #050533;
-    transform: scale(0.9);
+    border-radius: 10px;
+    margin: 20px;
 }
 
-#img1{
-    border: solid;
-    border-radius: 15px;
-    border-color: #050533;
+h2 {
+    font-family: 'Bungee Tint', cursive; /* Cambia la fuente según tu preferencia */
+    color: #050533;
 }
-#intro{
-    display: flex;
+
+input[type="text"] {
+    font-family: "Rubik Marker Hatch", system-ui;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #050533;
+    border-radius: 5px;
+    width: calc(100% - 22px); /* Ajustar el tamaño */
 }
 
 button{
@@ -98,8 +90,46 @@ button:hover{
     transform: scale(1.2);
 }
 
-#intro2{
+#habit-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#habit-list li {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #E0E0E0;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+#habit-list input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+label {
+    flex-grow: 1; /* Hace que el texto ocupe el espacio disponible */
+}
+
+#suggestions-list {
+    margin-top: 20px;
+}
+
+#suggestions-list button {
+    margin: 5px 0;
+    background-color: #050533;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#suggestions-list button:hover {
+    background-color: #E34234;
 }
 
 .social{
@@ -112,7 +142,6 @@ button:hover{
 .social a{
     padding: 0 10px;
     color: #F2F1E8;
-    transition: background-color 200ms ease, color 200ms ease;;
 }
 
 .social a:hover{
@@ -122,4 +151,3 @@ button:hover{
 footer p{
     text-align: center;
 }
-
