@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Londrina+Sketch&family=Orbitron:wght@400..900&family=Rubik+Marker+Hatch&family=Sixtyfour+Convergence&display=swap');
+
+body{
+    font-family: "Rubik Marker Hatch", system-ui;
+    background-color: #E34234;
+}
+
+header{
+    background-color: #F2F1E8;
+    overflow: hidden;
+
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 5px;
+}
+
+.menu a{
+    padding: 5px;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #050533 ;
+    transition: background-color 1000ms ease, color 1000ms ease;
+
+}
+
+.menu a:hover{
+    background-color: #050533;
+    color: #F2F1E8;
+}
+
+.menu a.active{
+    background-color: #050533;
+    color: #F2F1E8;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu a {
+        padding: 5px;
+        font-size: 1.2em;
+        width: 100%;
+        text-align: center;
+    }
+}
+#texto{
+    border: solid;
+    text-align: center;
+    margin: 10px;
+    border-radius: 20px;
+    transition: all 1000ms ease;
+}
+
+#texto:hover{
+    background-color: #F2F1E8;
+    color: #E34234;
+    border-color: #050533;
+    transform: scale(0.9);
+}
+
+#img1{
+    border: solid;
+    border-radius: 15px;
+    border-color: #050533;
+}
+#intro{
+    display: flex;
+}
+
+button{
+    font-family: "Rubik Marker Hatch", system-ui;
+    background-color: #050533;
+    color: #F2F1E8;
+    border-radius: 10px;
+    margin: 0 0 15px;
+    transition: all 1000ms ease;
+}
+
+button:hover{
+    background-color: #E34234;
+    transform: scale(1.5);
+}
+
+#intro2{
+    display: flex;
+}
+
+.social{
+    text-align: center;
+    font-size: 30px;
+    margin: 5px 0;
+
+}
+
+.social a{
+    padding: 0 10px;
+    color: #F2F1E8;
+}
+
+.social a:hover{
+    color: #050533;
+}
+
+footer p{
+    text-align: center;
+}
+
+/* Estilos generales para la sección de hábitos */
+#habits {
+    padding: 20px;
+    background-color: #F2F1E8;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+h2 {
+    font-family: 'Bungee Tint', cursive; /* Cambia la fuente según tu preferencia */
+    color: #050533;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #050533;
+    border-radius: 5px;
+    width: calc(100% - 22px); /* Ajustar el tamaño */
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #050533;
+    color: #F2F1E8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #E34234;
+    transform: scale(1.1);
+}
+
+#habit-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#habit-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #E0E0E0;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+#habit-list input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+label {
+    flex-grow: 1; /* Hace que el texto ocupe el espacio disponible */
+}
+
+#suggestions-list {
+    margin-top: 20px;
+}
+
+#suggestions-list button {
+    margin: 5px 0;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#suggestions-list button:hover {
+    background-color: #45a049;
+}
