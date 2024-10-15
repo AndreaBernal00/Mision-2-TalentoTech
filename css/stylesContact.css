@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Londrina+Sketch&family=Orbitron:wght@400..900&family=Rubik+Marker+Hatch&family=Sixtyfour+Convergence&display=swap');
+
+body{
+    font-family: "Rubik Marker Hatch", system-ui;
+    background-color: #E34234;
+}
+
+header{
+    background-color: #F2F1E8;
+    overflow: hidden;
+
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 5px;
+}
+
+.menu a{
+    padding: 5px;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #050533 ;
+    transition: background-color 1000ms ease, color 1000ms ease;
+
+}
+
+.menu a:hover{
+    background-color: #050533;
+    color: #F2F1E8;
+}
+
+.menu a.active{
+    background-color: #050533;
+    color: #F2F1E8;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu a {
+        padding: 5px;
+        font-size: 1.2em;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Estilos del formulario de contacto */
+#contact-form {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #F2F1E8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact-form h1 {
+    text-align: center;
+    color: #050533;
+}
+
+#contact-form p {
+    text-align: center;
+    font-size: 1.1em;
+    color: #050533;
+}
+
+#contact-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #050533;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form input[type="number"],
+#contact-form textarea,
+#contact-form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #050533;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+#contact-form textarea {
+    resize: vertical;
+}
+
+#contact-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #050533;
+    color: #F2F1E8;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#contact-form button:hover {
+    background-color: #E34234;
+}
+
+/* Estilos del mensaje de advertencia */
+#form-alert {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+    display: none;
+}
+
+#submit-btn.success {
+    background-color: #00b300 !important;
+}
+
+@media (max-width: 768px) {
+    #contact-form {
+        width: 90%;
+    }
+}
+
+
+.social{
+    text-align: center;
+    font-size: 30px;
+    margin: 5px 0;
+
+}
+
+.social a{
+    padding: 0 10px;
+    color: #F2F1E8;
+}
+
+.social a:hover{
+    color: #050533;
+}
+
+footer p{
+    text-align: center;
+}

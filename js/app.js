@@ -59,4 +59,3 @@ document.getElementById('add-habit').addEventListener('click', addHabit);
 
 // Cargar hábitos al inicio
 loadHabits();
-

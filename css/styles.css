@@ -4,6 +4,7 @@ body{
     font-family: "Rubik Marker Hatch", system-ui;
     background-color: #E34234;
 }
+
 #titulo1{
     text-align: center;
     border: solid;
@@ -15,8 +16,8 @@ body{
 header{
     background-color: #F2F1E8;
     overflow: hidden;
-
 }
+
 .menu{
     display: flex;
     justify-content: space-around;
@@ -30,7 +31,6 @@ header{
     text-decoration: none;
     color: #050533 ;
     transition: background-color 1000ms ease, color 1000ms ease;
-
 }
 
 .menu a:hover{
@@ -57,6 +57,7 @@ header{
         text-align: center;
     }
 }
+
 #texto{
     border: solid;
     text-align: center;
@@ -77,11 +78,12 @@ header{
     border-radius: 15px;
     border-color: #050533;
 }
+
 #intro{
     display: flex;
 }
 
-button{
+.one{
     font-family: "Rubik Marker Hatch", system-ui;
     background-color: #050533;
     color: #F2F1E8;
@@ -93,7 +95,7 @@ button{
     cursor: pointer;
 }
 
-button:hover{
+.one:hover{
     background-color: #E34234;
     transform: scale(1.2);
 }
@@ -102,17 +104,60 @@ button:hover{
     display: flex;
 }
 
+.slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Alinear verticalmente */
+    overflow: hidden; /* Ocultar las imágenes no activas */
+    width: 300px; /* Ajusta el ancho según tus necesidades */
+    height: 80%; /* Ajusta la altura según tus necesidades */
+    margin: 20px auto; /* Centrar el slider */
+}
+
+.slide {
+    display: none; /* Oculta todas las imágenes por defecto */
+}
+
+.slide.active {
+    display: block; /* Muestra solo la imagen activa */
+}
+
+.slider-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.buttons {
+    margin-top: 10px; /* Espaciado entre el slider y los botones */
+    text-align: center; /* Centrar los botones */
+}
+
+button {
+    padding: 10px 15px;
+    margin: 0 5px; /* Espaciado entre los botones */
+    cursor: pointer;
+    background-color: #007BFF; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+button:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+}
+
+
 .social{
     text-align: center;
     font-size: 30px;
     margin: 5px 0;
-
 }
 
 .social a{
     padding: 0 10px;
     color: #F2F1E8;
-    transition: background-color 200ms ease, color 200ms ease;;
+    transition: background-color 200ms ease, color 200ms ease;
 }
 
 .social a:hover{

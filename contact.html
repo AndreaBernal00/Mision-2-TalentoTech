@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construye Tu Realidad</title>
+    <link rel="stylesheet" href="css/stylesContact.css">
+    <script src="https://kit.fontawesome.com/ed3df3892d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="about.html">Acerca de</a>
+            <a class="active"  href="contact.html">Contacto</a>
+            <a href="habits.html">Comienza</a>
+        </div>
+    </header><br>
+    <main>
+        <section id="contact-form">
+            <h1>Contáctanos</h1>
+            <p>Queremos saber más de ti. Llena este formulario con tus datos y cuéntanos sobre tus gustos.</p>
+            <form id="form" action="#" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Tu nombre" required><br>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required><br>
+
+                <label for="age">Edad:</label>
+                <input type="number" id="age" name="age" placeholder="Tu edad" min="1" required><br>
+
+                <label for="interests">¿Cuáles son tus gustos e intereses?</label><br>
+                <textarea id="interests" name="interests" placeholder="Cuéntanos sobre tus gustos e intereses" rows="4" required></textarea><br>
+
+                <label for="favorite-hobby">Hobby favorito:</label><br>
+                <select id="favorite-hobby" name="favorite-hobby" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="Deportes">Deportes</option>
+                    <option value="Lectura">Lectura</option>
+                    <option value="Viajes">Viajes</option>
+                    <option value="Cocina">Cocina</option>
+                    <option value="Arte">Arte</option>
+                    <option value="Tecnología">Tecnología</option>
+                    <option value="Música">Música</option>
+                </select><br>
+
+                <label>¿Prefieres actividades en solitario o en grupo?</label><br>
+                <input type="radio" id="solo" name="activity-preference" value="Solitario" required>
+                <label for="solo">Solitario</label><br>
+                <input type="radio" id="group" name="activity-preference" value="Grupo" required>
+                <label for="group">Grupo</label><br>
+
+                <label for="comments">Comentarios adicionales:</label><br>
+                <textarea id="comments" name="comments" placeholder="Escribe aquí cualquier comentario adicional" rows="4"></textarea><br>
+
+                <div id="form-alert"></div>
+
+                <button type="submit" id="submit-btn">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>"La disciplina es el puente entre los sueños y la realidad, y los hábitos son los ladrillos que lo construyen."</p>
+        <hr>
+        <div class="social">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+        </div>
+        <p>&copy; 2024 Contruye Tu Realidad. Todos los derechos reservados.</p>
+    </footer>
+    <script src="js/contact.js"></script>
+</body>
+</html>

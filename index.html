@@ -12,7 +12,7 @@
         <div class="menu">
             <a class="active" href="index.html">Inicio</a>
             <a href="about.html">Acerca de</a>
-            <a href="#contact">Contacto</a>
+            <a href="contact.html">Contacto</a>
             <a href="habits.html">Comienza</a>
         </div>
     </header><br>
@@ -22,7 +22,7 @@
           <section id="texto">
             <h1>¡Viviendo Mejor Desde Hoy!</h1>
             <p>Queremos acompañarte en este camino para que construyas una nueva realidad, apoyándote en pequeños hábitos diarios que marcarán la diferencia en tu vida.Únete a nosotros y comienza tu viaje hacia una vida más saludable y plena.</p>
-            <a href="habits.html"><button>¡Empieza Ahora!</button></a>
+            <a href="habits.html"><button class="one">¡Empieza Ahora!</button></a>
         </section>
           <img id="img1" src="https://blog.uchceu.es/campus-life/wp-content/uploads/sites/37/2018/10/giphy-3-1.gif" alt="recursos" width="200px"><br>
         </section>
@@ -30,17 +30,37 @@
             <section id="texto">
                 <h1>Motivación</h1>
                 <p>Descubre la misión y visión detrás de nuestra aplicación</p>
-                <a href="about.html"><button>Nosotros</button></a>
+                <a href="about.html"><button class="one">Nosotros</button></a>
             </section>
             <section id="texto">
                 <h1>Habitos</h1>
                 <p> Establece y sigue hábitos que transformen tu vida poco a poco.</p>
+                <a href="contact.html"><button class="one">Iniciemos</button></a>
             </section>
             <section id="texto">
                 <h1>Contactanos</h1>
                 <p>Estamos aquí para ayudarte; no dudes en comunicarte con nosotros.</p>
+                <a href="contact.html"><button class="one">Comunicate</button></a>
             </section>
         </section><hr>
+        <div class="slider-container">
+            <section class="slide active">
+                <img src="css/post.png" alt="mot1">
+            </section>
+            <section class="slide">
+                <img src="css/post1.png" alt="mot2">
+            </section>
+            <section class="slide">
+                <img src="css/post2.png" alt="mot3">
+            </section>
+            <section class="slide">
+                <img src="css/post3.png" alt="mot4">
+            </section>
+        </div>
+        <div class="buttons">
+            <button id="prev">Anterior</button>
+            <button id="next">Siguiente</button>
+        </div>
 
       </main>
     <footer>
@@ -52,8 +72,8 @@
             <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
         </div>
         <p>&copy; 2024 Contruye Tu Realidad. Todos los derechos reservados.</p>
-
     </footer>
     <script src="js/app.js" ></script>
+    <script src="js/slide.js"></script>
 </body>
 </html>
